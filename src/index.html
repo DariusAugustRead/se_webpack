@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack</title>
   </head>
-  <body>
-    <h1>Hello</h1>
+  <body class="page">
+    <h1 class="page__title">Hello from Webpack!</h1>
+    <h2 class="page__subtitle">Image and Font Files Processing!</h2>
+    <img
+      id="image-steps"
+      alt="woman holding flag at the top of some stairs"
+      class="page__image"
+    />
+    <div class="page__image page__image_acheievements"></div>
+    <img
+      src="<%= require('./images/website-contacts.jpg')%>"
+      alt="woman looking at a dog in a basement"
+      class="page__image"
+    />
   </body>
 </html>
